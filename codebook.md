@@ -75,7 +75,7 @@ The activity that was taking place when the measurements were taken.
     * time_body_gyroscope_std_x
     * time_body_gyroscope_std_y
     * time_body_gyroscope_std_z
-* Meand and standard deviation of the time-domain body angular velocity jerk in the x, y, z directions
+* Mean and standard deviation of the time-domain body angular velocity jerk in the x, y, z directions
     * time_body_gyroscope_jerk_mean_x
     * time_body_gyroscope_jerk_mean_y
     * time_body_gyroscope_jerk_mean_z
