@@ -259,8 +259,15 @@ colnames(merged_data_means) <- gsub("_$", "", colnames(merged_data_means))
 ### with the average of each variable for each activity and each subject.
 
 merged_data_summary <- summarise_all(
-    # Test/training dataset info is not requested in data set; remove col 3
+    # Test/training dataset info is not requested in data set; remove column 3
     group_by(merged_data_means[ , -3],subject, activity),
     # "Average is assumed to indicate arithmetic mean
-    funs(mean) 
+    mean
 )
+
+## Please upload the tidy data set created in step 5 of the instructions. Please 
+## upload your data set as a txt file created with write.table() using 
+## row.name=FALSE (do not cut and paste a dataset directly into the text box, as 
+## this may cause errors saving your submission).
+
+write.table(merged_data_summary, "merged_data_summary.txt", row.names = FALSE)
